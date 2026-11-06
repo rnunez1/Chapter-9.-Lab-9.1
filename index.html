@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trip Inquiry</title>
+  <link rel="stylesheet" href="ch9lab.css">
+</head>
+<body>
+
+  <h1>Plan Your Trip</h1>
+
+  <form id="inquiry" method="post" action="#">
+
+    <p>
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required accesskey="n" tabindex="1">
+    </p>
+
+    <p>
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+    </p>
+
+    <p>
+      <label for="destination">Destination:</label>
+      <select id="destination" name="destination">
+        <optgroup label="Europe">
+          <option value="paris">Paris, France</option>
+          <option value="rome">Rome, Italy</option>
+        </optgroup>
+        <optgroup label="Asia">
+          <option value="tokyo" selected>Tokyo, Japan</option>
+          <option value="bangkok">Bangkok, Thailand</option>
+        </optgroup>
+      </select>
+    </p>
+
+    <fieldset>
+      <legend>Travel style</legend>
+      <p>
+        <input type="radio" id="style-budget" name="style" value="budget">
+        <label for="style-budget" class="choice">Budget</label>
+      </p>
+      <p>
+        <input type="radio" id="style-comfort" name="style" value="comfort" checked>
+        <label for="style-comfort" class="choice">Comfort</label>
+      </p>
+      <p>
+        <input type="radio" id="style-luxury" name="style" value="luxury">
+        <label for="style-luxury" class="choice">Luxury</label>
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Extras</legend>
+      <p>
+        <input type="checkbox" id="extra-guide" name="extras" value="guide">
+        <label for="extra-guide" class="choice">Guided tours</label>
+      </p>
+      <p>
+        <input type="checkbox" id="extra-insurance" name="extras" value="insurance">
+        <label for="extra-insurance" class="choice">Travel insurance</label>
+      </p>
+      <p>
+        <input type="checkbox" id="extra-car" name="extras" value="car">
+        <label for="extra-car" class="choice">Rental car</label>
+      </p>
+    </fieldset>
+
+    <p>
+      <label for="comments">Questions or Comments:</label>
+      <textarea id="comments" name="comments" rows="5" cols="40"></textarea>
+    </p>
+
+    <p>
+      <input type="image" src="images/send-button.png" alt="Send your inquiry">
+    </p>
+
+  </form>
+
+</body>
+</html>
