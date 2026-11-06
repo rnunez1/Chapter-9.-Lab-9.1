@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 2em;
+}
+
+form#inquiry {
+  background-color: #eef4fb;
+  padding: 1.5em;
+  max-width: 40em;
+  border-radius: 8px;
+}
+
+form#inquiry p {
+  margin: 0.75em 0;
+}
+
+/* Right-aligned labels in a fixed-width column */
+form#inquiry label {
+  display: inline-block;
+  width: 10em;
+  text-align: right;
+  margin-right: 0.5em;
+  vertical-align: top;
+}
+
+/* Radio and check box labels sit beside their controls */
+form#inquiry label.choice {
+  width: auto;
+  text-align: left;
+}
+
+form#inquiry fieldset {
+  margin: 1em 0;
+  border: 1px solid #9ab;
+  border-radius: 6px;
+}
+
+form#inquiry legend {
+  font-weight: bold;
+  padding: 0 0.5em;
+}
+
+/* Visible focus state for text boxes, the select list and the text area */
+form#inquiry input[type="text"]:focus,
+form#inquiry input[type="email"]:focus,
+form#inquiry select:focus,
+form#inquiry textarea:focus {
+  outline: 3px solid #1a5fb4;
+  background-color: #fffbe6;
+}
