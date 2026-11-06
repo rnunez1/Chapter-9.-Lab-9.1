@@ -1,50 +1,52 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 2em;
-}
+/* ---------- Trip Request form (request.html) ---------- */
 
-form#inquiry {
+form#request {
   background-color: #eef4fb;
   padding: 1.5em;
   max-width: 40em;
   border-radius: 8px;
 }
 
-form#inquiry p {
+form#request p {
   margin: 0.75em 0;
 }
 
-/* Right-aligned labels in a fixed-width column */
-form#inquiry label {
+/* Same label-column technique as Checkpoint 2 */
+form#request label {
   display: inline-block;
-  width: 10em;
+  width: 12em;
   text-align: right;
   margin-right: 0.5em;
   vertical-align: top;
 }
 
-/* Radio and check box labels sit beside their controls */
-form#inquiry label.choice {
-  width: auto;
-  text-align: left;
+form#request input[type="text"],
+form#request input[type="email"],
+form#request input[type="url"],
+form#request input[type="number"],
+form#request input[type="date"] {
+  padding: 0.3em;
+  font-size: 1em;
 }
 
-form#inquiry fieldset {
-  margin: 1em 0;
-  border: 1px solid #9ab;
-  border-radius: 6px;
+form#request button[type="submit"] {
+  background-color: #1a5fb4;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.6em 1.4em;
+  font-size: 1em;
+  cursor: pointer;
+  margin-left: 12.5em;
 }
 
-form#inquiry legend {
-  font-weight: bold;
-  padding: 0 0.5em;
+form#request button[type="submit"]:hover {
+  background-color: #12447f;
 }
 
-/* Visible focus state for text boxes, the select list and the text area */
-form#inquiry input[type="text"]:focus,
-form#inquiry input[type="email"]:focus,
-form#inquiry select:focus,
-form#inquiry textarea:focus {
+form#request input:focus,
+form#request select:focus,
+form#request textarea:focus {
   outline: 3px solid #1a5fb4;
   background-color: #fffbe6;
 }
